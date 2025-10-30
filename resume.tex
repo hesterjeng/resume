@@ -1,0 +1,93 @@
+%------------------------------------
+% Resume: Dr. John Engelsted Hester
+% Compile with: xelatex resume.tex
+%------------------------------------
+
+\documentclass[10pt, letterpaper]{article}
+
+% PACKAGES
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+
+% LAYOUT
+\geometry{letterpaper, margin=0.75in}
+\setlength\parindent{0in}
+\pagestyle{empty}
+
+% FONTS
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{Liberation Mono}
+
+% SECTION FORMATTING
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% CUSTOM COMMANDS
+\newcommand{\years}[1]{\textbf{#1}\hspace{1em}}
+
+% HYPERREF SETUP
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=MidnightBlue,
+    pdfauthor={Dr. John Engelsted Hester},
+    pdftitle={Resume - Dr. John Engelsted Hester}
+}
+
+% DOCUMENT
+\begin{document}
+{\LARGE Dr. John Engelsted Hester}\\[0.3cm]
+Location: Austin, Texas\\
+Email: \href{mailto:hesterj@etableau.com}{hesterj@etableau.com}\\
+Github: \href{https://github.com/hesterjeng}{github.com/hesterjeng}\\
+%Phone: \texttt{850-951-3298}\\
+Nationality:  U.S. citizen
+
+%\hrule
+\section*{Experience}
+\noindent
+\years{2025}Algorithmic Trading Platform Development\\
+Created \href{https://github.com/hesterjeng/longleaf}{Longleaf}, a modern high performance algorithmic trading platform.  This platform allows users to define and execute their own strategies, with an entirely open source backend that supports different brokerages and data providers.  Contributions to the Guix operating system and package manager.\\
+
+\years{2021-2024}Senior Research and Development Engineer, Imandra\\
+Project leader for program discovery and testing as part of DARPA contracts. Built a transpiler for verifying properties of trading venues, used to formally verify the behavior of venues used by quantitative trading firms. Designed a transpiler for the SysML v2 modeling language. Led a team of three to create a hallucination-free chatbot for interacting with SysML v2 models using large language models.\\
+
+\years{2019-2021}Graduate Research, University of Florida\\
+Developed \href{https://github.com/hesterj/Etableau}{Etableau}, an AI automated reasoning tool for first-order logic.
+
+\section*{Skills}
+Python, OCaml, C, Javascript, Git, Docker, Linux, Guix, Nix, Lisp
+
+\section*{Education}
+\noindent
+%\years{2016}  BSc in Mathematics, minor in Computer and Information Science and Engineering, University of Florida \\
+%\years{2017}  MSc in Mathematics, University of Florida\\
+%\years{2018}  Federated Logic Conference, Oxford, United Kingdom\\
+%\years{2019}  CICM Conference, Prague, Czech Republic\\
+%\years{2019}  CADE Conference, Natal, Brazil\\
+\years{2021}PhD in Mathematics, University of Florida\\
+
+%\hrule
+\section*{Publications}
+\years{2024}  \href{https://dl.acm.org/doi/10.1145/3652620.3687820}{Towards the Formal Verification of SysML v2 Models} (MODELS Companion '24).\\
+\years{2023}  Revisiting Variable Ordering for Real Quantifier Elimination using Machine Learning.\\
+\years{2021}  Novel Methods for First Order Automated Theorem Proving (Dissertation).\\
+\years{2021}  \href{https://github.com/hesterj/Etableau}{Etableau:  Combining Tableaux and Superposition} (Submitted to JAR).\\
+\years{2020}  Alternating Path Relevance for First Order Theorem Proving (Arxiv).\\
+\years{2019}  \href{https://arxiv.org/abs/1902.00818}{Automated ZFC Theorem Proving with E} (Proceedings of ARCADE 2019).\\
+\years{2017}  Metaphysics in Mathematics (Arxiv).\\
+
+%%\hrule
+\section*{Honors \& Awards}
+\noindent
+\years{2019}Woody Bledsoe Student Award\\
+\years{2019}Certificate of Excellence for Outstanding Teaching\\
+\years{2019}Visiting Graduate Student, Czech Technical University, Prague\\
+\years{2018}Vice President, UF Graduate Math Association\\
+\years{2017}Robert Long Prize (Honorable mention), University of Florida
+
+\end{document}
